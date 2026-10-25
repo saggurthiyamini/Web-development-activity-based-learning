@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dream Travels</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f2f8fc;
+        }
+
+        header {
+            background-color: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #023e8a;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 12px;
+        }
+
+        .hero {
+            background-color: #90e0ef;
+            text-align: center;
+            padding: 45px 15px;
+        }
+
+        .hero h2 {
+            color: #023e8a;
+        }
+
+        .packages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 260px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #bbb;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        button {
+            background-color: #0077b6;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .inquiry {
+            text-align: center;
+            padding: 20px;
+        }
+
+        input, select {
+            padding: 10px;
+            margin: 6px;
+            width: 220px;
+        }
+
+        footer {
+            background-color: #023e8a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Dream Travels</h1>
+    <p>Your Journey, Our Responsibility!</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#packages">Packages</a>
+    <a href="#inquiry">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>Explore the World with Us</h2>
+    <p>Discover beautiful destinations at affordable prices.</p>
+    <a href="#packages">
+        <button>Explore Packages</button>
+    </a>
+</section>
+
+<h2 style="text-align:center;">Popular Holiday Packages</h2>
+
+<section class="packages" id="packages">
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=500"
+             alt="Taj Mahal in India">
+        <h3>Agra Trip</h3>
+        <p>Duration: 2 Days</p>
+        <p>Price: Rs. 4,999</p>
+        <p>Visit the famous Taj Mahal.</p>
+        <button onclick="alert('Thank you for choosing Agra Trip!')">
+            Book Now
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1593693397690-362cb9666fc2?w=500"
+             alt="Kerala backwaters">
+        <h3>Kerala Tour</h3>
+        <p>Duration: 4 Days</p>
+        <p>Price: Rs. 9,999</p>
+        <p>Enjoy nature and beautiful backwaters.</p>
+        <button onclick="alert('Thank you for choosing Kerala Tour!')">
+            Book Now
+        </button>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=500"
+             alt="Goa beach">
+        <h3>Goa Vacation</h3>
+        <p>Duration: 3 Days</p>
+        <p>Price: Rs. 7,499</p>
+        <p>Relax on beautiful beaches.</p>
+        <button onclick="alert('Thank you for choosing Goa Vacation!')">
+            Book Now
+        </button>
+    </div>
+
+</section>
+
+<section class="inquiry" id="inquiry">
+    <h2>Travel Inquiry Form</h2>
+    <form onsubmit="event.preventDefault(); alert('Inquiry submitted successfully!');">
+        <input type="text" placeholder="Your Name" required>
+        <br>
+        <input type="email" placeholder="Your Email" required>
+        <br>
+        <select required>
+            <option value="">Select Destination</option>
+            <option>Agra</option>
+            <option>Kerala</option>
+            <option>Goa</option>
+        </select>
+        <br>
+        <input type="date" required>
+        <br>
+        <button type="submit">Submit Inquiry</button>
+    </form>
+</section>
+
+<footer>
+    <p>Contact: dreamtravels@example.com</p>
+    <p>&copy; 2026 Dream Travels. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
