@@ -252,30 +252,5 @@
         <p>&copy; 2026 ShopEase. All rights reserved.</p>
     </footer>
 
-    <script>
-        let cartCount = 0;
-
-        function addToCart() {
-            cartCount++;
-            document.getElementById("cart").textContent =
-                cartCount;
-            alert("Product added to cart!");
-        }
-
-        function searchProducts() {
-            let input = document.getElementById("search")
-                .value.toLowerCase();
-
-            let products = document.querySelectorAll(".card");
-
-            products.forEach(function(product) {
-                let name = product.dataset.name;
-
-                product.style.display =
-                    name.includes(input) ? "block" : "none";
-            });
-        }
-    </script>
-
 </body>
 </html>
